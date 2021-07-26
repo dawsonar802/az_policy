@@ -1,0 +1,38 @@
+{
+ "properties": {
+  "displayName": "Test Policy Set",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "createdBy": "27ee3586-2825-4e0d-b19c-f8ca8f19dd94",
+   "createdOn": "2021-07-26T19:44:26.898731Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "allowedLocations": {
+    "type": "Array",
+    "metadata": {
+     "description": "The list of allowed locations for resources.",
+     "displayName": "Allowed locations",
+     "strongType": "location"
+    }
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "15086293629187003799",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": "[parameters('allowedLocations')]"
+     }
+    },
+    "groupNames": []
+   }
+  ]
+ },
+ "id": "/subscriptions/f8b3739e-6523-45e1-bf08-bf628206474e/providers/Microsoft.Authorization/policySetDefinitions/testPolicySet",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "testPolicySet"
+}
