@@ -1,0 +1,68 @@
+{
+ "properties": {
+  "displayName": "1 New Test Policy Set",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "createdBy": "27ee3586-2825-4e0d-b19c-f8ca8f19dd94",
+   "createdOn": "2021-07-27T14:45:26.9176022Z",
+   "updatedBy": "27ee3586-2825-4e0d-b19c-f8ca8f19dd94",
+   "updatedOn": "2021-07-27T14:58:46.5520227Z"
+  },
+  "parameters": {
+   "effect-e372f825-a257-4fb8-9175-797a8a8627d6": {
+    "type": "String",
+    "metadata": {
+     "description": "For more information about effects, visit https://aka.ms/policyeffects",
+     "displayName": "Effect for policy: RDP access from the Internet should be blocked"
+    }
+   },
+   "effect-f9be5368-9bf5-4b84-9e0a-7850da98bb46": {
+    "type": "String",
+    "metadata": {
+     "description": "For more information about effects, visit https://aka.ms/policyeffects",
+     "displayName": "Effect for policy: Resource logs in Azure Stream Analytics should be enabled"
+    },
+    "allowedValues": [
+     "AuditIfNotExists",
+     "Disabled"
+    ],
+    "defaultValue": "AuditIfNotExists"
+   },
+   "requiredRetentionDays": {
+    "type": "String",
+    "metadata": {
+     "description": "For more information about resource logs, visit https://aka.ms/resourcelogs",
+     "displayName": "Required retention period (days) for resource logs"
+    },
+    "defaultValue": "365"
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "e372f825-a257-4fb8-9175-797a8a8627d6",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e372f825-a257-4fb8-9175-797a8a8627d6",
+    "parameters": {
+     "effect": {
+      "value": "[parameters('effect-e372f825-a257-4fb8-9175-797a8a8627d6')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "f9be5368-9bf5-4b84-9e0a-7850da98bb46",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f9be5368-9bf5-4b84-9e0a-7850da98bb46",
+    "parameters": {
+     "effect": {
+      "value": "[parameters('effect-f9be5368-9bf5-4b84-9e0a-7850da98bb46')]"
+     },
+     "requiredRetentionDays": {
+      "value": "[parameters('requiredRetentionDays')]"
+     }
+    }
+   }
+  ]
+ },
+ "id": "/subscriptions/f8b3739e-6523-45e1-bf08-bf628206474e/providers/Microsoft.Authorization/policySetDefinitions/1newtestPolicySet",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "1newtestPolicySet"
+}
