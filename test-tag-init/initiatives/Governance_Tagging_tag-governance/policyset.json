@@ -1,0 +1,36 @@
+{
+ "properties": {
+  "displayName": "Governance: Tagging",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "createdBy": "27ee3586-2825-4e0d-b19c-f8ca8f19dd94",
+   "createdOn": "2021-07-28T18:49:04.3606007Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "/subscriptions/f8b3739e-6523-45e1-bf08-bf628206474e/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Application",
+    "policyDefinitionId": "/subscriptions/f8b3739e-6523-45e1-bf08-bf628206474e/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Application",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/f8b3739e-6523-45e1-bf08-bf628206474e/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_CostCentre",
+    "policyDefinitionId": "/subscriptions/f8b3739e-6523-45e1-bf08-bf628206474e/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_CostCentre",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/f8b3739e-6523-45e1-bf08-bf628206474e/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Environment",
+    "policyDefinitionId": "/subscriptions/f8b3739e-6523-45e1-bf08-bf628206474e/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Environment",
+    "parameters": {},
+    "groupNames": []
+   }
+  ]
+ },
+ "id": "/subscriptions/f8b3739e-6523-45e1-bf08-bf628206474e/providers/Microsoft.Authorization/policySetDefinitions/tag-governance",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "tag-governance"
+}
